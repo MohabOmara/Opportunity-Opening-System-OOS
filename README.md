@@ -6,7 +6,7 @@ This repository contains examples of the code used in **AIESEC in Egypt's Offici
 
 ## 📌 What is OOS?
 
-The **Opportunity Opening System** (OOS) is the controlling system for AIESEC in Egypt's published opportunities on [expa.org](https://expa.aiesec.org).  
+The **Opportunity Opening System** (OOS) is the controlling system for AIESEC in Egypt's published opportunities on [aiesec.org](https://aiesec.org).  
 It determines which opportunities should be live and which should not.
 
 The system contains many details, but here you’ll find examples of the **Apps Script** code used within it.
