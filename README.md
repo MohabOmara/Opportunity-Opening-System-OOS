@@ -11,5 +11,7 @@ The system is mainly built on Appscript and Google Spreadsheets
 
 Triggers Explanation:
 API Requests is done by time Trigger , each 10 mins a request is sent
+
 Reallocation validation is done by a form submission Trigger , each time the form is filled and submitted the script runs
+
 Reaudit Reflection is done by Time Trigger , each 60 mins the script run
