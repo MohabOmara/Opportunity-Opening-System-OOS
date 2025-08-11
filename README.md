@@ -37,6 +37,3 @@ The system contains many details, but here you’ll find examples of the **Apps 
 - **Frequency:** Every 60 minutes  
 - **Action:** Runs the reaudit script.
 
-  
-  // Your API request logic here
-}
