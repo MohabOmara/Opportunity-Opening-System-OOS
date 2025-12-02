@@ -97,7 +97,7 @@ function unpublishOpportunity(id){
           contentType: 'application/json',
           payload: JSON.stringify(requestBody),
           headers: {
-            'access_token': "Iy_M5JqsanvbOhjlfE-oS2L5x1tGwLOpHS_ExKXxUwg"
+            'access_token': "MY_ACCESS_TOKEN"
           }
         };
 
@@ -195,7 +195,7 @@ function publishOpportunity(id){
           contentType: 'application/json',
           payload: JSON.stringify(requestBody),
           headers: {
-            'access_token': "Iy_M5JqsanvbOhjlfE-oS2L5x1tGwLOpHS_ExKXxUwg"
+            'access_token': "MY_ACCESS_TOKEN"
           }
         };
 
@@ -207,4 +207,5 @@ function publishOpportunity(id){
     console.error('Failed to publish opportunities:', error);
     throw error;
   }
+
 }
