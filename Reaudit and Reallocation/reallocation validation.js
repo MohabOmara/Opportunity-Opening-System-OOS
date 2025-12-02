@@ -48,12 +48,13 @@ function IGV_Reallocation() {
         reallocation_sheet.getRange(lr,13,1,1).setValue("NOT PASSED")
         igv_rejection_mail()
       }else if(actual_index.length == 0){
-        reallocation_sheet.getRange(lr,14,1,1).setValue("OPP ID IS NOT SUBMITTED WITH THAT ORIGINAL REFERENCE ID").setBackground("black").setFontColor("white")
+        reallocation_sheet.getRange(lr,14,1,1).setValue("OPP ID IS NOT SUBMITTED WITH THAT ORIGINAL REFERENCE ID OR NOT SUBMITTED ON OOS AT ALL").setBackground("black").setFontColor("white")
         reallocation_sheet.getRange(lr,13,1,1).setValue("NOT PASSED")
         igv_rejection_mail()
       }else if(audit_index.length == 1 && actual_index.length == 1){
         // audit_sheet.getRange(audit_index[0],86,1,15).setValues(reallocation_data)
         var remainings = audit_data[(audit_index[0])-1][112]
+        var signature_date = new Date(audit_data[(audit_index[0])-1][17])
         reallocation_sheet.getRange(lr,10,1,1).setValue(remainings)
         if (remainings >= reallocated_slots){
           reallocation_sheet.getRange(lr,11,1,1).setValue("TRUE")
